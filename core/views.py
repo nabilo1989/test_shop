@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
-# Create your views here.
+
+def home(request, slug=None):
+    return render(request, 'core/home.html')
